@@ -1,3 +1,56 @@
 <resources>
+
+    <!-- Common begin -->
     <string name="app_name">GeoNote</string>
+    <!-- Common end -->
+
+    <!-- MapsFragment begin -->
+    <string name="device_location_button_content_description">Current location</string>
+    <!-- MapsFragment end -->
+
+    <!-- MarkerItem begin -->
+    <string name="marker_item_header">Marker information</string>
+    <string name="marker_item_title_hint">Title</string>
+    <string name="marker_item_description_hint">Description</string>
+    <string name="marker_item_latitude">Latitude: %1$s</string>
+    <string name="marker_item_longitude">Longitude: %1$s</string>
+    <!-- MarkerItem end -->
+
+    <!-- Navigation begin -->
+    <string name="bottom_navigation_map">Map</string>
+    <string name="bottom_navigation_markers">Markers</string>
+    <!-- Navigation end -->
+
+    <!-- Common dialogs begin -->
+    <string name="dialogs_positive_button">OK</string>
+    <!-- Common dialogs end -->
+
+    <!-- NoPlayServices dialog begin -->
+    <string name="no_play_services_title">Google Play services issues</string>
+    <string name="no_play_services_message">Google Play services are not available on this device. Location will not work</string>
+    <!-- NoPlayServices dialog end -->
+
+    <!-- NotGrantedNoAsk dialog begin -->
+    <string name="not_granted_no_ask_title">Access to permission</string>
+    <string name="not_granted_no_ask_message">Location permission is not granted.
+        Device location services are not available</string>
+    <!-- NotGrantedNoAsk dialog end -->
+
+    <!-- Rationale dialog begin -->
+    <string name="rationale_title">Access to permission</string>
+    <string name="rationale_message">Location permission is required to update device location.
+        If you want to grant it, please, restart the application</string>
+    <!-- Rationale dialog end -->
+
+    <!-- Messages begin -->
+    <string name="message_google_play_services_not_present">Google Play services are not available!</string>
+    <string name="message_marker_removed">Marker removed!</string>
+    <string name="message_marker_saved">Marker saved!</string>
+    <!-- Messages end -->
+
+    <!-- Markers begin -->
+    <string name="location_marker_default_title">Current location</string>
+    <string name="user_marker_default_title">Marker</string>
+    <!-- Markers end -->
+
 </resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/marker_item_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/marker_item_card_margin_horizontal"
+    android:layout_marginTop="@dimen/marker_item_card_margin_top"
+    app:cardCornerRadius="@dimen/marker_item_card_corner_radius"
+    app:cardElevation="@dimen/marker_item_card_elevation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/marker_item_common_margin_horizontal">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/marker_item_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/marker_item_header"
+            android:textAlignment="center"
+            android:textSize="@dimen/marker_item_header_text_size"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/marker_item_title_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marker_item_title_container_margin_top"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/marker_item_header">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/marker_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/marker_item_title_hint"
+                android:inputType="textNoSuggestions|textMultiLine"
+                android:minHeight="@dimen/marker_item_text_min_height" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/marker_item_description_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/marker_item_title_container">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/marker_item_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/marker_item_description_hint"
+                android:inputType="textNoSuggestions|textMultiLine"
+                android:minHeight="@dimen/marker_item_text_min_height" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/marker_item_latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marker_item_latitude_margin_top"
+            android:textAlignment="textStart"
+            android:textSize="@dimen/marker_item_latitude_text_size"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/marker_item_description_container" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/marker_item_longitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:textSize="@dimen/marker_item_longitude_text_size"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/marker_item_latitude" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/marker_item_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/marker_item_common_margin_horizontal"
+            android:layout_marginTop="@dimen/marker_item_common_margin_horizontal"
+            android:src="@drawable/ic_baseline_save_24"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/marker_item_delete"
+            app:layout_constraintTop_toBottomOf="@id/marker_item_longitude" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/marker_item_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/marker_item_common_margin_horizontal"
+            android:layout_marginTop="@dimen/marker_item_common_margin_horizontal"
+            android:src="@drawable/ic_baseline_delete_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/marker_item_longitude" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
